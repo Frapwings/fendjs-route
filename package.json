@@ -1,8 +1,16 @@
 {
-  "name": "route-component",
-  "repo": "component/route",
-  "description": "Route implementation for client-side routers",
-  "version": "0.2.0",
+  "name": "fendjs-route",
+  "version": "0.0.0",
+  "description": "Fundamental of router for Fend.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Frapwings/fendjs-route.git"
+  },
+  "author": "kazupon (kazuya kawaguchi) <k.kawaguchi@frapwings.jp>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Frapwings/fendjs-route/issues"
+  },
   "keywords": [
     "route",
     "router",
@@ -15,12 +23,11 @@
     "mocha": "*",
     "better-assert": "*"
   },
-  "license": "MIT",
-  "scripts": [
-    "index.js"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/component/route.git"
+  "main": "index.js",
+  "scripts": {
+    "test": "make test-coveralls"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
   }
 }

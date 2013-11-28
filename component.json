@@ -1,14 +1,18 @@
 {
-  "name": "route",
-  "repo": "component/route",
-  "description": "Route implementation for client-side routers",
-  "version": "0.2.0",
-  "keywords": ["route", "router", "routing"],
+  "name": "fendjs-route",
+  "repo": "Frapwings/fendjs-route",
+  "description": "Fundamental of router for Fend.js",
+  "version": "0.0.0",
+  "license": "MIT",
+  "keywords": [
+    "route",
+    "router",
+    "routing"
+  ],
   "dependencies": {
     "component/path-to-regexp": "*"
   },
   "development": {},
-  "license": "MIT",
   "scripts": [
     "index.js"
   ]
