@@ -66,9 +66,14 @@ describe('Route#call(type, args)', function(){
     route.before(function(id){
       assert('one 5' == calls[0]);
       assert('two 5' == calls[1]);
+    });
+
+    route.after(function(id) {
+      assert(5 == id);
       done();
     });
 
     route.call('before', ['5']);
+    route.call('after', ['5']);
   })
 })
