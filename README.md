@@ -1,5 +1,7 @@
 # fendjs-route
 
+[![Build Status](https://travis-ci.org/Frapwings/fendjs-route.png?branch=master)](https://travis-ci.org/Frapwings/fendjs-route) [![Coverage Status](https://coveralls.io/repos/Frapwings/fendjs-route/badge.png)](https://coveralls.io/r/Frapwings/fendjs-route) [![NPM version](https://badge.fury.io/js/fendjs-route.png)](http://badge.fury.io/js/fendjs-route) [![Dependency Status](https://david-dm.org/Frapwings/fendjs-route.png)](https://david-dm.org/Frapwings/fendjs-route)
+
 Fundamental of router for Fend.js.
 
 # Installation
