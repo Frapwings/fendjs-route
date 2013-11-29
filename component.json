@@ -12,8 +12,11 @@
   "dependencies": {
     "component/path-to-regexp": "*"
   },
-  "development": {},
+  "development": {
+    "component/assert": "*"
+  },
   "scripts": [
     "index.js"
-  ]
+  ],
+  "remotes": []
 }

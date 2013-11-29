@@ -1,6 +1,6 @@
-
-var Route = require('..');
-var assert = require('better-assert');
+var Route = (typeof window !== 'undefined' && window !== null) 
+  ? require('fendjs-route') : require(process.env.FENDJS_ROUTE ? '../lib-cov/' : '../');
+var assert = require('assert');
 
 describe('Route#matches(path)', function(){
   it('should match paths and return matches', function(){
