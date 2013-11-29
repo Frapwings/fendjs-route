@@ -2,7 +2,7 @@
   "name": "fendjs-route",
   "repo": "Frapwings/fendjs-route",
   "description": "Fundamental of router for Fend.js",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "keywords": [
     "route",
