@@ -20,9 +20,9 @@ $ component install Frapwings/fendjs-route
 
 # API
 
-## Route(path)
+## Route(path, [callbacks], [options])
 
-Initialize a `Route` with a `path` string or regexp.
+Initialize a `Route` with a `path` string or regexp, `callbacks` and `options`
 
 ## Route#match(path)
 

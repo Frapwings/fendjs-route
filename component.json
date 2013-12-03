@@ -10,7 +10,8 @@
     "routing"
   ],
   "dependencies": {
-    "component/path-to-regexp": "*"
+    "component/path-to-regexp": "*",
+    "component/type": "*"
   },
   "development": {
     "component/assert": "*"
