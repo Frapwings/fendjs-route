@@ -23,52 +23,7 @@ function Route(path) {
   this.path = path;
   this.keys = [];
   this.regexp = toRegexp(path, this.keys);
-  this._before = [];
-  this._after = [];
 }
-
-/**
- * Add before `fn`.
- *
- * @param {Function} fn
- * @return {Route} self
- * @api public
- */
-
-Route.prototype.before = function(fn){
-  this._before.push(fn);
-  return this;
-};
-
-/**
- * Add after `fn`.
- *
- * @param {Function} fn
- * @return {Route} self
- * @api public
- */
-
-Route.prototype.after = function(fn){
-  this._after.push(fn);
-  return this;
-};
-
-/**
- * Invoke callbacks for `type` with `args`.
- *
- * @param {String} type
- * @param {Array} args
- * @api public
- */
-
-Route.prototype.call = function(type, args){
-  args = args || [];
-  var fns = this['_' + type];
-  if (!fns) throw new Error('invalid type');
-  for (var i = 0; i < fns.length; i++) {
-    fns[i].apply(null, args);
-  }
-};
 
 /**
  * Check if `path` matches this route,

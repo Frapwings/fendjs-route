@@ -49,31 +49,3 @@ describe('Route#matches(path)', function(){
     assert('js/jquery.js' == ret.args[1]);
   })
 })
-
-describe('Route#call(type, args)', function(){
-  it('should invoke callbacks', function(done){
-    var route = new Route('/user/:id');
-    var calls = [];
-
-    route.before(function(id){
-      calls.push('one ' + id);
-    });
-
-    route.before(function(id){
-      calls.push('two ' + id);
-    });
-
-    route.before(function(id){
-      assert('one 5' == calls[0]);
-      assert('two 5' == calls[1]);
-    });
-
-    route.after(function(id) {
-      assert(5 == id);
-      done();
-    });
-
-    route.call('before', ['5']);
-    route.call('after', ['5']);
-  })
-})
